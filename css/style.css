@@ -1,0 +1,87 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.colors {
+  height: 40vh;
+  background-image: linear-gradient(80deg, tomato, tomato, gold, royalblue, lime, royalblue, gold, tomato, tomato);
+  background-size: 800%;
+  -webkit-animation: colors 3s linear infinite;
+          animation: colors 3s linear infinite;
+}
+
+@-webkit-keyframes colors {
+  from {
+    background-position: 0 0;
+  }
+  to {
+    background-position: 100% 0;
+  }
+}
+
+@keyframes colors {
+  from {
+    background-position: 0 0;
+  }
+  to {
+    background-position: 100% 0;
+  }
+}
+.wrapper {
+  margin: 50px;
+  text-align: center;
+  line-height: 10px;
+  background-color: gray;
+}
+
+.square {
+  display: inline-block;
+  height: 25px;
+  width: 25px;
+  background-color: #fff;
+  border-radius: 2px;
+  -webkit-animation: fade 1.4s infinite;
+          animation: fade 1.4s infinite;
+}
+
+.square:nth-child(2n) {
+  -webkit-animation: fade 1s infinite;
+          animation: fade 1s infinite;
+}
+
+.square:nth-child(3n) {
+  -webkit-animation: fade 0.5s infinite;
+          animation: fade 0.5s infinite;
+}
+
+@-webkit-keyframes fade {
+  10% {
+    opacity: 1;
+    background-color: violet;
+  }
+  50% {
+    opacity: 0;
+    background-color: royalblue;
+  }
+  90% {
+    opacity: 1;
+    background-color: violet;
+  }
+}
+
+@keyframes fade {
+  10% {
+    opacity: 1;
+    background-color: violet;
+  }
+  50% {
+    opacity: 0;
+    background-color: royalblue;
+  }
+  90% {
+    opacity: 1;
+    background-color: violet;
+  }
+}/*# sourceMappingURL=style.css.map */
